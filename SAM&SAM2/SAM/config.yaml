@@ -1,0 +1,13 @@
+DATASET:
+  TRAIN_PATH: "/root/autodl-tmp/train" #images masks
+  TEST_PATH: "/root/autodl-tmp/train"
+  IMAGE_FORMAT: ".png"
+
+SAM:
+  CHECKPOINT: "./sam_vit_b_01ec64.pth"
+  RANK: 512
+
+TRAIN:
+  BATCH_SIZE: 1
+  NUM_EPOCHS: 2
+  LEARNING_RATE: 0.0001
